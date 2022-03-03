@@ -3,36 +3,173 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Asquare Calculator</title>
+    <title>Search Bar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 
 <body>
 
-    <section class="calculator">
+    <section class="container">
         <form>
-            <p class="title">Asquare Calculator</p>
-            <input type="text" class="screen">
+            <i class="fas fa-search"></i>
+            <input type="text" name="" id="search" placeholder="Search" onkeyup="ssearch()">
         </form>
-        <div class="buttons">
-            <button type="button" class="btn" data-num="*">*</button>
-            <button type="button" class="btn" data-num="/">/</button>
-            <button type="button" class="btn" data-num="-">-</button>
-            <button type="button" class="btn" data-num='+'>+</button>
-            <button type="button" class="btn" data-num='7'>7</button>
-            <button type="button" class="btn" data-num='8'>8</button>
-            <button type="button" class="btn" data-num="9">9</button>
-            <button type="button" class="btn" data-num="4">4</button>
-            <button type="button" class="btn" data-num="5">5</button>
-            <button type="button" class="btn" data-num="6">6</button>
-            <button type="button" class="btn" data-num="1">1</button>
-            <button type="button" class="btn" data-num="2">2</button>
-            <button type="button" class="btn" data-num="3">3</button>
-            <button type="button" class="btn" data-num="0">0</button>
-            <button type="button" class="btn" data-num=".">.</button>
-            <button type="button" class="btn-equal" >=</button>
-            <button type="button" class="btn-clear" >C</button>
-
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name aa</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name aa</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name fff</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name dd</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name ss</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name se</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name err</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name thyh</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name rff</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name vff</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name rff</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name err</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name thh</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name rgg</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name tyu</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name ewq</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name asd</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name ghj</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name rty</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name hye</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://asia.olympus-imaging.com/content/000090033.jpg">
+                <div class="p-detail">
+                    <h3>Name abhinav</h3>
+                    <p>Description</p>
+                </div>
+            </div>
         </div>
     </section>
 
