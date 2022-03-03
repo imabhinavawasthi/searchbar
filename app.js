@@ -1,26 +1,20 @@
-(function () {
-    let screen = document.querySelector('.screen');
-    let buttons = document.querySelectorAll('.btn');
-    let clear = document.querySelector('.btn-clear');
-    let equal = document.querySelector('.btn-equal');
+const ssearch = () => {
+    const searchbox = document.getElementById('search').value.toUpperCase();
+    const items = document.getElementById("product-list");
+    const product = document.querySelectorAll('.product');
+    const pname = items.getElementsByTagName('h3');
 
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function (e) {
-            if(screen.value==="Enter Value")screen.value='';
-            let value = e.target.dataset.num;
-            screen.value += value;
-        })
-    });
+    console.log(pname.length);
 
-    equal.addEventListener('click', function (e) {
-        if (screen.value === '') { screen.value = "Enter Value"; }
-        else {
-            let ans = eval(screen.value);
-            screen.value = ans.toPrecision(4);
+    for (let i = 0; i < pname.length; i++) {
+        let match = product[i].getElementsByTagName('h3')[0];
+
+        if (match) {
+            let textval = match.textContent || match.innerHTML;
+
+            if (textval.toUpperCase().indexOf(searchbox) != -1) {
+                product[i].style.display = "";
+            } else product[i].style.display = "none";
         }
-    });
-
-    clear.addEventListener('click', function (e) {
-        screen.value = '';
-    });
-})();
+    }
+};
